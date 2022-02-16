@@ -1,0 +1,23 @@
+
+@import "vars";
+
+@mixin background {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;  
+}
+
+
+
+ @mixin font ($color:rgb(196, 196, 196)  ,$font-size:20px) {
+    font-family: $font-family;
+    color:darken($color , $procent);
+    font-size: $font-size;
+
+}
+
+
+
+@mixin dark ($color){
+    background-color: darken($color, $amount: $procent);
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="../static/css/style.css">
+    {% block titele %}
+    {% endblock %}
+</head>
+ <body>
+  <header class = "header">
+    <div class="container header__container">
+        <div class="menu-burger__header">
+            <span></span>
+        </div>
+
+        <nav class="header__nav">
+            <ul class="menu header__menu">
+                <li><a href="/" class="menu__item">Главная</a></li>
+                <li><a href="/blog/" class="menu__item">Блог</a></li>
+                <!-- <li><a href="/new/" class="menu__item">Обновления</a></li> -->
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="content-wrapper"> 
+    <div class = "container content-wrapper__container">
+     
+        <main id="swup" class="transition-fade">
+           
+        {% block body %}
+        
+         
+         {% endblock %}
+         </main>
+         <hr>
+    <p class="secure">все права защищены </p>
+    </div>    
+</div>
+
+  </div>
+        </div>
+
+
+
+  <script src= "../static/js/script.js"></script>
+  <script>
+    const swup = new Swup();
+</script>
+
+ </body>
+</html>

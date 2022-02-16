@@ -1,0 +1,60 @@
+
+@import "vars";
+@import "mixins";
+
+.me {
+    display: flex;
+    @include font($font-size:30px);
+    text-shadow: 0 -0.05em 0.2em $bg_color, 0.01em -0.02em 0.15em #FE0, 0.01em -0.05em 0.15em #FC0, 0.02em -0.15em 0.2em #F90, 0.04em -0.20em 0.3em #F70, 0.05em -0.25em 0.4em #F70, 0.06em -0.2em 0.9em #F50, 0.1em -0.1em 1.0em #F40;
+    justify-content: center;
+    
+}
+
+
+
+
+.glav {
+    @include font(#00a2ff , $font-size:38px);
+  
+}
+
+.start {
+    @include font(#11a0e2 , 30px);
+    background-color: $bg_color 
+   
+}
+.para_me {
+    @include font($color:#00aeff);
+    
+}
+
+.secure {
+    display: flex;
+    @include font ($color:#00ffff ,$font-size:20px);
+    justify-content: center;
+}
+
+.facts {
+    @include font;
+    background-color: $bg_color;
+}
+
+.stori_1{
+    @include font($color:#ce7e1c  , $font-size:30px);
+    background-color: $bg_color;
+ 
+}
+
+.first{
+    @include font;
+  
+}
+ 
+.paragraf{
+    @include font($font-size:9px);
+    
+}
+
+.new {
+    @include font;
+}

@@ -1,0 +1,27 @@
+{% extends 'head.html' %}
+    {%block titele %}
+    <title>обо мне</title>
+    {% endblock %}
+
+    {%block body%}
+
+     {% for i in stori  %}
+
+       
+        <h1 class="me">{{ i.hello }}</h1>
+
+  <div class="img_me">
+      <a href = "tel:+79881637373" ><img data-src={{ i.pic_me }}  height="505" width="404" class="lazyload"  /></a>
+    </div>
+  <div class="para_me">
+      <p>{{ i.about }}</p>
+  </div>
+    {% endfor %}
+    <a href ='/blog/'><img data-src="../static/img/rr.jpg" height="70" width="70" align = right class="lazyload" ></a>
+
+
+
+
+
+{% endblock %}
+   

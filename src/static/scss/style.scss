@@ -1,0 +1,13 @@
+@import "vars";
+@font-face {
+    font-family:$font;
+    src: url("../fonts/#{$font}.ttf");
+    font-style: serif;
+}
+@import "text";
+@import "burger";
+@import "other";
+@import "swup";
+
+
+

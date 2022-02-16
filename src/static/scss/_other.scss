@@ -1,0 +1,46 @@
+@import "vars";
+@import "mixins";
+
+@media (max-width:767px) {
+   p ,h1 ,h2 ,ul ,li  {
+      display:flex;
+      justify-content: center;
+
+   }
+   .img_stori .img_me{
+      display:flex;
+      justify-content: center;
+   }
+   
+   
+  
+}
+
+body {
+   background-image:url($picture);
+   @include background; 
+   text-decoration: none;  
+      } 
+   
+
+ 
+ @media (max-width:767px) {
+   body {
+      background-image: url($picture_mobile)!important;
+      @include background;   
+   } 
+ }
+
+
+
+.img_me , .img_story{
+   display: flex;
+   justify-content: center;
+}
+
+.img_me{
+   img{
+      cursor:default;
+      color:none;
+   }
+}

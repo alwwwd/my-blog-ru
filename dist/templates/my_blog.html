@@ -1,0 +1,52 @@
+{% extends 'head.html' %}
+  {% block titele %}
+    <title>блог</title>
+  {% endblock %}
+{% block body %}
+
+
+<h1 class="start">Поход в музей</h1>
+{% for storis in stori %}
+<h2 class="stori_1">{{ storis.stori1 }}</h2>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+
+      <p class="facts">{{ storis.fact1 }}</p>
+      <p class="facts">{{ storis.fact2 }}</p>
+      
+      <h1 class="glav">Факты</h1>
+      
+      <ul>
+        <li class="facts">{{ storis.fact4 }}</li>
+
+        <li class="facts">{{ storis.fact3 }}</li>
+      </ul>
+      
+      <div class="img_story">
+        <img data-src="{{ storis.storis1_pic }}"   class="lazyload"  alt=""
+        height="505" width="404">
+</div>
+</div>
+    
+    <div class="col-md-6">
+      <h1 class="glav">{{  storis.stori2 }}</h1>
+      
+      <div class="img_story">
+        <img  data-src="{{ storis.stori2_pic }}"  class="lazyload" alt=""
+        height="505" width="404">
+</div>
+</div>
+{% endfor %} 
+
+
+  
+<a class="to" href='/'>  
+  <img  data-src="../static/img/ll.png"   class="lazyload" alt="" height="70" width="70" align=left > 
+</a>
+
+</div>
+</div>
+</main>
+{% endblock %}
