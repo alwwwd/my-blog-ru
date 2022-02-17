@@ -8,28 +8,32 @@ app = flask(__name__)
 
 @app.route('/')
 def index():
-    conn = db.connect('db.sqlite')
-    cur = conn.cursor()
+     conn = db.connect('db.sqlite')
+     cur = conn.cursor()
 
 
-    cur.execute("""select hello , about ,img_me from main""")
-    my = []
-    for hi, me, pic_me in cur.fetchall():
+     cur.execute("""select hello , about ,img_me from main""")
+     my = []
+     for hi, me, pic_me in cur.fetchall():
         my.append(
-            {'hello':hi,'about':me,'pic_me':pic_me}
+            {
+            'hello':hi,
+            'about':me,
+            'pic_me':pic_me
+            }
         )
 
-    context = {'stori': my}
+     context = {'stori': my}
 
 
-    conn.close()
+     conn.close()
 
-    return html('index.html', **context)
+     return html('index.html', **context)
 
 
-@app.route('/new/')
-def new():
-    return html('new.html')
+# @app.route('/new/')
+# def new():
+#     return html('new.html')
 
 @app.route('/blog/')
 def blog():

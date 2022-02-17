@@ -3,7 +3,7 @@ const path = require("../config/path.js");
 
 
 const clear = ()=>{
-    return del(Path_dist)
+    return del("./dist")
   }
 
 module.exports = clear;
