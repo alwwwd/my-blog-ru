@@ -10887,7 +10887,7 @@ $(document).ready(function() {
                 $('body').toggleClass('fixed-page');
 	});
 });
-// (function(window, factory) {
+(function(window, factory) {
 	var lazySizes = factory(window, window.document, Date);
 	window.lazySizes = lazySizes;
 	if(typeof module == 'object' && module.exports){

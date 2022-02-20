@@ -8,7 +8,7 @@ app = flask(__name__)
 
 @app.route('/')
 def index():
-     conn = db.connect('db.sqlite')
+     conn = db.connect('dist/db.sqlite')
      cur = conn.cursor()
 
 
@@ -31,9 +31,9 @@ def index():
      return html('index.html', **context)
 
 
-# @app.route('/new/')
-# def new():
-#     return html('new.html')
+@app.route('/open_sorce/')
+def new():
+    return html('git.html')
 
 @app.route('/blog/')
 def blog():

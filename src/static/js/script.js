@@ -1,5 +1,5 @@
 @@include('jquery-3.6.0.js')
 @@include('menu.js')
-// @@include('lazysizes.js')
+@@include('lazysizes.js')
 @@include('swup.js')
 @@include('webp.js')
