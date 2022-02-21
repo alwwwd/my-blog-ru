@@ -34,5 +34,8 @@
     "gulp-webp": "^4.0.1",
     "gulp-webp-css": "^1.1.0",
     "sass": "^1.49.0"
+  },
+  "dependencies": {
+    "daisyui": "^2.1.0"
   }
 }

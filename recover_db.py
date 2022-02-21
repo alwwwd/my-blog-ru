@@ -18,7 +18,7 @@ def db (name):
         img_me text
         );"""
         )
-        cur.execute("""insert into main (hello, about, img_me) values ('АВТОР: Сергеев Алексей' , 'Привет ,меня зовут Лёша, мне 11 лет. Я живу в Санкт-Петербурге. Я хочу стать python 🐍 и web разаботчиком', '"../static/img/Web_site_author.jpg"')""")
+        cur.execute("""insert into main (hello, about, img_me) values ('АВТОР: Сергеев Алексей' , 'Привет ,меня зовут Лёша, мне 11 лет. Я живу в Санкт-Петербурге. Я хочу стать python 🐍 и web разаботчиком', '../static/img/Web_site_author.jpg')""")
 
         #blog
         cur.execute(
@@ -62,7 +62,8 @@ def db (name):
         fact1 text,
         fact2 text,
         fact3 text,
-        fact4 text
+        fact4 text,
+       
         );"""
         )
 
@@ -90,7 +91,7 @@ def db (name):
         img_me text
         );"""
         )
-        cur.execute("""insert into main (hello, about, img_me) values ('АВТОР: Сергеев Алексей' , 'Привет ,меня зовут Лёша, мне 11 лет. Я живу в Санкт-Петербурге. Я хочу стать python 🐍 и web разаботчиком', '"../static/img/Web_site_author.jpg"')""")
+        cur.execute("""insert into main (hello, about, img_me) values ('АВТОР: Сергеев Алексей' , 'Привет ,меня зовут Лёша, мне 11 лет. Я живу в Санкт-Петербурге. Я хочу стать python 🐍 и web разаботчиком', '../static/img/Web_site_author.jpg')""")
 
         conn.commit()
         conn.close()

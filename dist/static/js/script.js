@@ -11702,6 +11702,15 @@ function l(window, document, Date) { // Pass in the window Date function also fo
 }
 ));
 
+document.body.onload = function(){
+    setTimeout(function(){
+        var preloader = document.getElementById (' page-preloader');
+        if( !preloader.classList.contains('done')  )
+        {
+            preloader.classList.add('done');
+        }
+    }, 1000);
+}
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();
@@ -13090,18 +13099,5 @@ var findPlugin = exports.findPlugin = function findPlugin(pluginName) {
 /***/ })
 /******/ ]);
 });
-function testWebP(callback) {
-    var webP = new Image();
-    webP.onload = webP.onerror = function () {
-    callback(webP.height == 2);
-    };
-    webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
-    }
-    testWebP(function (support) {
-    if (support == true) {
-    document.querySelector('body').classList.add('webp');
-    }else{
-    document.querySelector('body').classList.add('no-webp');
-    }
-    });
-    
+
+

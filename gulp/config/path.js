@@ -8,7 +8,7 @@ const path = {
         html:Path_dist + template,
         css: Path_dist + static+ "css/",
         js:  Path_dist + static + "js/",
-        fonts: Path_src + static +"/fonts/",
+        fonts: Path_dist + static +"/fonts/",
         img: Path_dist + static + "img/",
         py:  Path_dist,
         db:Path_dist,
