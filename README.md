@@ -1,5 +1,5 @@
 # my-blog-ru
-this relese is stabel
+this relese is stabe
 
 # recover my sqlite data based  
 i'm create file "recover_db.py"
