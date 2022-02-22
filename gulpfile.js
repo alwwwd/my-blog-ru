@@ -16,7 +16,7 @@ const path = require("./gulp/config/path.js");
 
 
 const watcher = () => {
-    watch(path.watch.html, html ) 
+    // watch(path.watch.html, html ) 
     watch(path.watch.db, db)
     watch(path.watch.py ,py )
     watch(path.watch.scss , scss)
