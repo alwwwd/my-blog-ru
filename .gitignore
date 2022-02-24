@@ -1,6 +1,18 @@
 node_modules/
-.DS_Store
-*/*/*/.DS_Store
+# **/.DS_Store
+dist/static/.DS_Store
+dist/templates/.DS_Store
+dist/static/css/.DS_Store
+dist/static/js/.DS_Store
+dist/static/img/.DS_Store
+
+src/static/.DS_Store
+src/static/scss/.DS_Store
+src/static/js/.DS_Store
+src/static/img/.DS_Store
+src/templates/.DS_Store
+
+
 *.zip 
 package-lock.json
 Thumbs.db
