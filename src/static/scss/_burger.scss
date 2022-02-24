@@ -12,12 +12,17 @@ a {
     @include font($color:rgb(0, 238, 255) , $font-size:6);
     text-decoration: none;
     font-weight: 600;
-        
-   
+    :hover{
+        color:darken(rgb(255, 200, 18) , $procent)!important;
+    }   
+
+    :after{
+        color:darken(rgb(255, 200, 18) , $procent)!important;
+
+    }
 }
-// :hover{
-//     color:darken(rgb(255, 200, 18) , $procent)!important;
-// }
+
+
 header {
 	position: fixed;
 	width: 100%;

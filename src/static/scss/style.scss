@@ -3,17 +3,16 @@
     font-family:$font;
     src: url("../fonts/#{$font}.ttf");
     font-style: serif;
+    font-display: swap;
 }
+@import "other";
 @import "text";
 @import "burger";
-@import "other";
 @import "swup";
-// @import "daisyui";
-
-
+@import "bootstrap/bootstrap-grid.scss";
 
 body {
-    font-family:$font ,serif;
+    font-family:$font ,sefif;
 
     .error{
         color:rgb(212, 4, 4)

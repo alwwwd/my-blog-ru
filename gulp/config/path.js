@@ -17,7 +17,7 @@ const path = {
 
     src : {
         html:Path_src + template +"*.html",
-        scss:Path_src + static + "scss/style.scss",
+        scss:Path_src + static +  "scss/style.scss",
         js: Path_src + static + "js/script.js",
         img:Path_src + static + "img/*.*",
         py: Path_src + "/app.py",

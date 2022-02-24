@@ -18,7 +18,7 @@ def db (name):
         img_me text
         );"""
         )
-        cur.execute("""insert into main (hello, about, img_me) values ('АВТОР: Сергеев Алексей' , 'Привет ,меня зовут Лёша, мне 11 лет. Я живу в Санкт-Петербурге. Я хочу стать python 🐍 и web разаботчиком', '../static/img/Web_site_author.jpg')""")
+        cur.execute("""insert into main (hello, about, img_me) values ('АВТОР: Сергеев Алексей' , 'Привет ,меня зовут Лёша, мне 11 лет. Я живу в Санкт-Петербурге. Я хочу стать python 🐍 и web разаботчиком', '"../static/img/Web_site_author.jpg"')""")
 
         #blog
         cur.execute(
@@ -26,8 +26,10 @@ def db (name):
         id  integer
             primary key autoincrement,
         stori1_img text,
+        stori1_img_webp text,
         stori1 text,
         stori2_img text,
+        stori2_img_webp text,       
         stori2 text,
         fact1 text,
         fact2 text,
@@ -36,10 +38,12 @@ def db (name):
         );"""
         )
 
-        cur.execute("""insert into blog (stori1_img, stori1, stori2_img, stori2, fact1, fact2, fact3, fact4) values 
+        cur.execute("""insert into blog (stori1_img, stori1_img_webp, stori1, stori2_img, stori2_img_webp, stori2, fact1, fact2, fact3, fact4) values 
         ('../static/img/stori1.jpg',
+         '../static/img/stori1.webp',
          'Первый Macintosh',
-         '../static/img/stori2.jpg',
+         '../static/img/stori2.jpg', 
+         '../static/img/stori2.webp',
          'Скоько у пиявок мозгов? если думали что 1 мозг ,то это миф',
          'macintoch 128k',
          'был представлен 24 января 1984 года.',
@@ -56,21 +60,24 @@ def db (name):
         id  integer
             primary key autoincrement,
         stori1_img text,
+        stori1_img_webp text,
         stori1 text,
         stori2_img text,
+        stori2_img_webp text,       
         stori2 text,
         fact1 text,
         fact2 text,
         fact3 text,
-        fact4 text,
-       
+        fact4 text
         );"""
         )
 
-        cur.execute("""insert into blog (stori1_img, stori1, stori2_img, stori2, fact1, fact2, fact3, fact4) values 
+        cur.execute("""insert into blog (stori1_img, stori1_img_webp, stori1, stori2_img, stori2_img_webp, stori2, fact1, fact2, fact3, fact4) values 
         ('../static/img/stori1.jpg',
+         '../static/img/stori1.webp',
          'Первый Macintosh',
-         '../static/img/stori2.jpg',
+         '../static/img/stori2.jpg', 
+         '../static/img/stori2.webp',
          'Скоько у пиявок мозгов? если думали что 1 мозг ,то это миф',
          'macintoch 128k',
          'был представлен 24 января 1984 года.',
@@ -91,7 +98,7 @@ def db (name):
         img_me text
         );"""
         )
-        cur.execute("""insert into main (hello, about, img_me) values ('АВТОР: Сергеев Алексей' , 'Привет ,меня зовут Лёша, мне 11 лет. Я живу в Санкт-Петербурге. Я хочу стать python 🐍 и web разаботчиком', '../static/img/Web_site_author.jpg')""")
+        cur.execute("""insert into main (hello, about, img_me) values ('АВТОР: Сергеев Алексей' , 'Привет ,меня зовут Лёша, мне 11 лет. Я живу в Санкт-Петербурге. Я хочу стать python 🐍 и web разаботчиком', '"../static/img/Web_site_author.jpg"')""")
 
         conn.commit()
         conn.close()
@@ -102,6 +109,7 @@ if r_n == "all":
     db(r_n)
 elif r_n == "blog":
     db(r_n)
+
 elif r_n == "main":
     db(r_n)
 

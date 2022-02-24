@@ -7,10 +7,11 @@
       justify-content: center;
 
    }
-   // .img_stori .img_me{
-   //    display:flex;
-   //    justify-content: center;
-   // }
+   .img_stori .img_me{
+      display:flex;
+      margin-top: 20cm;
+      justify-content: center;
+   }
    
    
   
@@ -20,13 +21,13 @@ body {
    background-image:url($picture);
    @include background; 
    text-decoration: none;  
-      } 
+   } 
    
 
  
- @media (max-width:767px) {
+ @media (orientation:portrait) {
    body {
-      background-image: url($picture_mobile)!important;
+      background-image:url($picture_mobile);
       @include background;   
    } 
  }

@@ -1,31 +1,41 @@
 {% extends 'head.html' %}
-    {%block title %}
-    <title>обо мне</title>
-    {% endblock %}
+{%block title %}
+<title>обо мне</title>
+{% endblock %}
 
-    {%block body%}
+{%block body%}
 
-     {% for i in stori  %}
-
-       
-        <h1 class="me">{{ i.hello }}</h1>
-
-  <div class="img_me">
-
-      <a href = "tel:+79881637373" ><img data-src="../static/img/Web_site_author.jpg"  height="505" width="404" class="lazyload"  /></a>
-
-    </div>
-  <div class="para_me">
-      <p>{{ i.about }}</p>
-  </div>
-    {% endfor %}
-
-    <a href ='/blog/'><img src="../static/img/rr.png" height="70" width="70" align = right class="lazyload" ></a>
+{% for i in stori  %}
 
 
+<h1 class="me">{{ i.hello }}</h1>
+
+<div class="img_me">
+
+  
+    <picture>
+      <a href="tel:+79881637373">
+      <source type="image/webp" data-src="../static/img/Web_site_author.webp">
+      <img  type="image/jpg" data-src="../static/img/Web_site_author.jpg" height="505" width="404" class="lazyload" />
+    </a>
+    </picture>  
+  
+
+</div>
+<div class="para_me">
+  <p>{{ i.about }}</p>
+</div>
+{% endfor %}
+
+<a href='/blog/'>
+  <picture>
+    <source type="image/webp" src="../static/img/rr.webp">
+    <img  type="image/png" src="../static/img/rr.png" height="70" width="70" align=right class="lazyload">
+
+  </picture>   
+</a>
 
 
 
 
 {% endblock %}
-   

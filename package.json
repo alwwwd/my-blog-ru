@@ -36,6 +36,6 @@
     "sass": "^1.49.0"
   },
   "dependencies": {
-    "daisyui": "^2.1.0"
+    "bootstrap": "^5.0.2"
   }
 }

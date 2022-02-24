@@ -12,11 +12,11 @@ const css = () =>{
             outputStyle:"expanded"
             }))
         .pipe(autoprefixer({
-                overrideBrowserslist:["last 5 versions"],
+                overrideBrowserslist:["last 100 versions"],
                 cascade:true
             }))
         .pipe(gcmq())
-        .pipe(css_clear())
+        // .pipe(css_clear())
         .pipe(dest(path.dist.css))
 }
 
