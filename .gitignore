@@ -2,9 +2,22 @@ node_modules/
 # **/.DS_Store
 # **/**/.DS_Store
 #  {src ,dist }/{static,templates}/.DS_Store
+
+
+**/**/**/.DS_Store
+**/**/.DS_Store
+**/.DS_Store
+.DS_Store
+
+
+
+
+
+
+
 *.zip 
 package-lock.json
 Thumbs.db
-*/*/*/Thumbs.db
+**/**/**/Thumbs.db
 .vscode/
 .idea/
