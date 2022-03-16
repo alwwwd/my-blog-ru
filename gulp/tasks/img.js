@@ -5,13 +5,13 @@ const path = require("../config/path.js");
 
 const img = img => {
     return(src(path.src.img))
-      .pipe(min({
-      prograssive:true,
-      svgPlugins:[{removeViewBox : false}],
-      interlaced:true,
-      optimizetionLevel: 9
-    }
-    ))
+    //   .pipe(min({
+    //   prograssive:true,
+    //   svgPlugins:[{removeViewBox : false}],
+    //   interlaced:true,
+    //   optimizetionLevel: 9
+    // }
+    // ))
       .pipe(webp({
           
        }))
