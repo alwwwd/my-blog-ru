@@ -25,16 +25,22 @@
       </ul>
       
       <div class="img_story">
-        <img data-src="{{ storis.stori1_pic }}"   class="lazyload"  alt="" height="505" width="404">
-</div>
+        <picture>
+          <source type="image/webp" data-src= "{{ storis.stori1_pic_webp }}" height="500" width="400" class="lazyload">
+          <img  type="image/jpg" data-src= "{{ storis.stori1_pic }}" height="500" width="400" class="lazyload" />
+        </picture>
+ 
+ </div>
 </div>
 
     <div class="col-md-6">
       <h1 class="glav">{{  storis.stori2 }}</h1>
       
       <div class="img_story">
-        <img  data-src="{{ storis.stori2_pic }}"  class="lazyload" alt="" height="505" width="404">
-</div>
+        <picture>
+          <source type="image/webp" data-src= "{{ storis.stori2_pic_webp }}" height="500" width="400" class="lazyload">
+          <img  type="image/jpg" data-src= "{{ storis.stori2_pic }}" height="500" width="400" class="lazyload" />
+        </picture></div>
 </div>
 {% endfor %}
 
