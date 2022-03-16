@@ -5,14 +5,6 @@
   font-display: swap;
 }
 
-body {
-  background-image: url("../img/pic.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 50% 50%;
-  text-decoration: none;
-}
-
 .img_me,
 .img_story {
   display: -webkit-box;
@@ -114,15 +106,6 @@ body {
   font-family: "Copperplate", serif;
   color: #adadad;
   font-size: 20px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 
 a {
@@ -1341,6 +1324,15 @@ body {
 
 body .error {
   color: #d40404;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @media (min-width: 576px) {
@@ -6784,6 +6776,16 @@ body .error {
 
   .fixed-pade {
     overflow: hidden;
+  }
+}
+
+@media (orientation: landscape) {
+  body {
+    background-image: url("../img/pic.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    text-decoration: none;
   }
 }
 

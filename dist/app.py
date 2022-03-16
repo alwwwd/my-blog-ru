@@ -1,3 +1,4 @@
+from flask import *
 from flask import Flask as flask
 from flask import render_template as html
 import sqlite3 as db
@@ -12,11 +13,11 @@ def index():
     cur = conn.cursor()
 
 
-    cur.execute("""select hello , about ,img_me from main""")
+    cur.execute("""select hello , about ,img_me, img_me_webp from main""")
     my = []
-    for hi, me, pic_me in cur.fetchall():
+    for hi, me, pic_me, pic_me_webp in cur.fetchall():
         my.append(
-            {'hello':hi,'about':me,'pic_me':pic_me}
+            {'hello':hi,'about':me,'pic_me':pic_me, 'pic_me_webp':pic_me_webp}
         )
 
     context = {'stori': my}
@@ -50,6 +51,6 @@ def blog():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
 
 

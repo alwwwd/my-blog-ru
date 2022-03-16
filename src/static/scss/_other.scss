@@ -16,13 +16,13 @@
    
   
 }
-
-body {
-   background-image:url($picture);
-   @include background; 
-   text-decoration: none;  
-   } 
-   
+@media(orientation:landscape){
+   body {
+      background-image:url($picture);
+      @include background; 
+      text-decoration: none;  
+      } 
+   }
 
  
  @media (orientation:portrait) {
