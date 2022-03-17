@@ -108,20 +108,26 @@
   font-size: 20px;
 }
 
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 a {
   font-family: "Copperplate", serif;
-  color: #00c3d1;
+  color: #e8e8e8;
   font-size: 6;
   text-decoration: none;
   font-weight: 600;
 }
 
-a :hover {
-  color: #e3ae00 !important;
-}
-
-a :after {
-  color: #e3ae00 !important;
+a:hover {
+  color: #00eeff;
 }
 
 header {
@@ -131,7 +137,7 @@ header {
   left: 0;
   z-index: 20;
   height: 80px;
-  background-color: #0066eb;
+  background-color: #b32121;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
@@ -1324,15 +1330,6 @@ body {
 
 body .error {
   color: #d40404;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 
 @media (min-width: 576px) {
@@ -6667,7 +6664,7 @@ body .error {
     position: absolute;
     top: 55px;
     left: 0;
-    background: #f76300;
+    background: #d82929;
     -webkit-box-shadow: black;
     -moz-box-shadow: black;
     box-shadow: black;
@@ -6675,10 +6672,10 @@ body .error {
     -webkit-box-shadow: 0 4px 2px -2px rgba(36, 36, 36, 0.37);
     -moz-box-shadow: 0 4px 2px -2px rgba(36, 36, 36, 0.37);
     box-shadow: 0 4px 2px -2px rgba(36, 36, 36, 0.37);
-    -webkit-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    transition: all 0.4s ease;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    transition: all 1s ease;
     left: -100%;
   }
 
@@ -6688,7 +6685,7 @@ body .error {
 
   .header__nav.open-menu {
     left: 0;
-    background-color: #a66517;
+    color: #000;
   }
 
   .header__menu li {
@@ -6710,34 +6707,52 @@ body .error {
     height: 3px;
     width: 100%;
     position: absolute;
-    background-color: #ada314;
+    background-color: #e8e8e8;
     margin: 0 auto;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
   }
 
   .menu-burger__header span {
     top: 16px;
     cursor: pointer;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    border-radius: 10%;
   }
 
   .menu-burger__header:after,
   .menu-burger__header:before {
     content: "";
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    border-radius: 10%;
   }
 
   .menu-burger__header:after {
     bottom: 5px;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    border-radius: 10%;
   }
 
   .menu-burger__header:before {
     top: 5px;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    border-radius: 10%;
   }
 
   .menu-burger__header.open-menu span {
     opacity: 0;
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    -moz-transition: 0.5s;
-    transition: 0.5s;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    border-radius: 10%;
   }
 
   .menu-burger__header.open-menu:before {
@@ -6751,6 +6766,25 @@ body .error {
     -o-transition: 0.4s;
     -moz-transition: 0.4s;
     transition: 0.4s;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    border-radius: 10%;
+  }
+
+  .menu-burger__header.open-menu:after {
+    -webkit-transform: rotate(38deg);
+    -moz-transform: rotate(38deg);
+    -ms-transform: rotate(38deg);
+    -o-transform: rotate(38deg);
+    transform: rotate(38deg);
+    top: 16px;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    -moz-transition: 0.4s;
+    transition: 0.4s;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    border-radius: 10%;
   }
 
   .menu-burger__header.open-menu:after {
@@ -6764,6 +6798,9 @@ body .error {
     -o-transition: 0.4s;
     -moz-transition: 0.4s;
     transition: 0.4s;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    border-radius: 10%;
   }
 
   header {
